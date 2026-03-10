@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
             std::cout << encoded << std::endl;
         } else if (action == Action::Decode) {
             try {
-                std::string decoded = std::bytearray::fromBase64(input).tostdstring();
+                std::string decoded = std::bytearray::fromBase64(input).toStdString();
                 std::cout << decoded << std::endl;
             } catch (const std::exception& ex) {
                 std::cerr << "Failed to decode input: " << ex.what() << std::endl;

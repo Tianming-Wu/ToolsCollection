@@ -6,6 +6,8 @@
 #include <iostream>
 
 #include <SharedCppLib2/ansiio.hpp>
+
+#define LOGT_WCHAR_SUPPORT
 #include <SharedCppLib2/logt.hpp>
 
 int main(int argc, char** argv)
