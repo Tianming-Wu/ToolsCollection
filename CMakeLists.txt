@@ -43,3 +43,8 @@ if(WIN32)
 
     add_executable(Mousemover windows/mousemover.cpp)
 endif()
+
+if(UNIX)
+    add_executable(sdproxy linux/sdproxy.cpp)
+    target_link_libraries(sdproxy PRIVATE SharedCppLib2::basic SharedCppLib2::arguments SharedCppLib2::platform)
+endif()
