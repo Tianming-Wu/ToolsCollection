@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 
     ba.readAllFromStream(ifs);
     
-    std::bytearray result = sha256::getMessageDigest(ba);
+    std::bytearray result = scl2::sha256::hash(ba);
 
     std::cout<< std::hex << result << std::endl;
     return 0;
